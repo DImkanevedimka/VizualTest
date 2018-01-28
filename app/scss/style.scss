@@ -416,8 +416,12 @@
 	text-transform: uppercase;
 
 	@media (max-width: 991px){
+		padding-left: 10px;
 		font-size: 20px;
 		line-height: 40px;
+	}
+	@media (max-width: 991px){
+
 	}
 }
 
@@ -443,17 +447,20 @@
 	}
 
 	@media (max-width: 991px){
+		display: inline-block;
 		padding-top: 10px;
+		padding-left: 10px;
 		width: 50%;
+		box-sizing:border-box;
 		font-size: 12px;
 		line-height: 17px;
-		display: inline-block;
 		float: left;
 	}
 
 	@media (max-width: 575px){
 		width: 100%;
-
+		padding-right: 10px;
+		float: none;
 	}
 }
 
@@ -483,11 +490,9 @@
 	}
 
 	@media (max-width: 991px){
-		width: 46%;
+		width: 50%;
 		position: static;
 		display: inline-block;
-		margin-left: 10px;
-		box-sizing: border-box;
 	}
 
 	@media (max-width: 767px){
@@ -496,6 +501,10 @@
 
 	@media (max-width: 575px){
 		float: none;
+		display: block;
+		width: 90%;
+		margin: 0 auto;
+		margin-top: 15px;
 	}	
 
 	img{
@@ -519,16 +528,28 @@
 
 .slick-prev {
 	top: 50%;
+	height: 36px;
 	background: url("../img/prev.png") no-repeat center;
+	background-size: cover;
 	right: 0;
 	z-index: 1;
+
+	@media (max-width: 767px){
+		height: 20px;
+	}
 }
 
 .slick-next {
 	top: 50%;
+	height: 36px;
 	transform:translateY(-50%);
 	background: url("../img/next.png") no-repeat center;
-	z-index: 5;
+	background-size: cover;
+	z-index: 2;
+
+	@media (max-width: 767px){
+		height: 20px;
+	}
 }
 
 .slick-dots {
@@ -594,10 +615,11 @@
 
 
 .main-bottom {
-	padding-top: 110px;
 	display: flex;
 	justify-content: space-between;
+	padding-top: 110px;
 	padding-bottom: 83px;
+	clear: both;
 
 	@media  (max-width: 991px){
 		padding-top: 30px;
@@ -605,7 +627,6 @@
 	}
 
 	@media (max-width: 767px){
-		clear: both;
 		flex-direction: column;
 		align-items: center;
 	}
@@ -733,10 +754,7 @@
 		padding: 0;
 		padding-right: 10px;
 		padding-left: 5px;
-		display: flex;
-		flex-direction: column;
 		justify-content: center;
-		align-items: center;
 	}
 
 	@media (max-width: 767px){
@@ -755,6 +773,14 @@
 		justify-content: space-around;
 	}
 }
+
+// for ie
+*::-ms-backdrop, .item-text__popup { 
+	@media (max-width: 1199px){
+		align-items: stretch;
+	}
+}
+// 
 
 
 .item-text__button {
@@ -956,7 +982,7 @@
 		line-height: 22px;	
 
 		@media (max-width: 991px){
-			width: 160px;
+			width: 155px;
 		}
 
 		@media (max-width: 767px){
@@ -988,7 +1014,7 @@
 }
 
 .footer-rights {
-	height: 78px;
+	height: 48px;
 	background-color: rgba(244, 243, 243, 0.66);
 
 	@media (max-width: 575px){

@@ -17,7 +17,7 @@ gulp.task("default", ["watch"])
 gulp.task("sass", function(){
 	gulp.src("app/scss/*.scss")
 	.pipe(sass().on('error', sass.logError))
-	.pipe(autoprefixer(["last 15 versions", "> 1%", "ie 8", "ie 7"], { cascade: true }))
+	.pipe(autoprefixer(['last 2 versions'], { cascade: true }))
 	.pipe(gulp.dest("dist/css"))
 	.pipe(browserSync.reload({stream: true}))
 });
