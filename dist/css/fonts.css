@@ -1,0 +1,33 @@
+@font-face {
+  font-family: "Minion Pro";
+  src: local("Minion Pro"), url("../fonts/MinionProRegular.eot"), url("../fonts/MinionProRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Lucida Grande";
+  src: url(../fonts/762168.ttf) format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "Lucida Grande";
+  src: url(../fonts/762154.ttf) format("truetype");
+  font-style: normal;
+  font-weight: bold; }
+
+@font-face {
+  font-family: "Futura Lt BT";
+  src: local("Futura Lt BT"), url("../fonts/futuraltbt.woff") format("woff"), url("../fonts/futuraltbt.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 300; }
+
+@font-face {
+  font-family: "Futura Md BT";
+  src: local("Futura Md BT"), url("../fonts/8051781869.woff") format("woff"), url("../fonts/8051781869.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "Futura Md BT";
+  src: local("Futura Md BT"), url("../fonts/futura-md-bt-bold.eot"), url("../fonts/futura-md-bt-bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: bold; }
